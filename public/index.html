@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile Card Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+<h1>Profile Card Generator</h1>
+<p>Create your profile card</p>
+
+<form id="profileForm">
+
+<label for="name">Name</label>
+<input
+type="text"
+id="name"
+name="name"
+placeholder="Enter your name"
+required
+>
+
+<label for="bio">Bio</label>
+<textarea
+id="bio"
+name="bio"
+placeholder="Write something about yourself"
+required
+></textarea>
+
+<label for="skills">Skills</label>
+<input
+type="text"
+id="skills"
+name="skills"
+placeholder="HTML, CSS, JavaScript"
+required
+>
+
+<label for="linkedin">LinkedIn</label>
+<input
+type="url"
+id="linkedin"
+name="linkedin"
+placeholder="https://linkedin.com/in/yourname"
+>
+
+<label for="github">GitHub</label>
+<input
+type="url"
+id="github"
+name="github"
+placeholder="https://github.com/yourname"
+>
+
+<button type="submit">Generate Profile</button>
+
+</form>
+
+<div id="profileResult"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
